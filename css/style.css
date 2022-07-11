@@ -1,0 +1,33 @@
+.correct {color: rgb(0, 0, 0);}
+.error {color: rgb(255, 255, 255);}
+
+body {background-color: rgb(80, 108, 202);}
+
+button {
+    background-color: rgb(80, 108, 202);
+    color: white;
+}
+button:active {
+    box-shadow: 0 2px #777;
+    transform: translateY(-2px);
+}
+
+#ticket-form, #user-ticket {background-color: rgb(211, 45, 45);}
+
+#user-ticket > .row {
+    min-height: 160px;
+    align-content: center;
+}
+
+#user-ticket .ticket-border {
+    height: max-content;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#user-ticket .ticket-border .col-3 {border-right: 1px solid black;}
+
+#user-ticket .row [class^="col"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
